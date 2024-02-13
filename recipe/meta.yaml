@@ -23,13 +23,13 @@ requirements:
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
   host:
-    - python
-    - setuptools >=62.4
+    - python {{ python }}
+    - setuptools {{ setuptools }}
     - wheel
-    - setuptools-rust >=1.5.2
+    - setuptools-rust {{ setuptools_rust }}
     - pip
   run:
-    - python
+    - python {{ python }}
     - regex >=2022.1.18
     - requests >=2.26.0
 
